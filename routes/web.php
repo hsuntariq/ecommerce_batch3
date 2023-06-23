@@ -3,6 +3,7 @@
 use App\Http\Controllers\categoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Product_controller;
+use App\Http\Controllers\userController;
 use App\Models\Products;
 
 /*
@@ -19,6 +20,8 @@ use App\Models\Products;
 
 
 Route::view("/admin/add","pages.admin.add")->name('add');
+Route::view("/register","pages.register")->name('register');
+Route::view("/login","pages.login")->name('login');
 Route::view("/admin/add-category","pages.admin.addCategory");
 Route::post('/add-product',[Product_controller::class,'add_data'])->name('add_product');
 Route::post('/add-category',[categoryController::class,'AddCategory']);
@@ -28,3 +31,7 @@ Route::get('/single-product/{id}',function($id){
     $item = Products::find($id);
     return view('pages.singleProduct',compact('item'));
 });
+
+Route::post('/register',[userController::class,'SignUp']);
+Route::post('/logout',[userController::class,'SignOut']);
+Route::post('/login',[userController::class,'SignIn']);
