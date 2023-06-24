@@ -2,17 +2,17 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img style="object-fit: cover" width="10px" height="450px"
-                src="https://th.bing.com/th/id/OIP.z_ry5g_b-bpufInKUf4fNAHaFj?w=240&h=180&c=7&r=0&o=5&pid=1.7"
+                src="https://img.freepik.com/premium-photo/fashion-clothing-hangers-showroom_392895-356022.jpg?w=2000"
                 class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img style="object-fit: cover" width="10px" height="450px"
-                src="https://th.bing.com/th/id/OIP.7UseNRvstfWvWKBHuKdErwHaI0?w=168&h=200&c=7&r=0&o=5&pid=1.7"
+                src="https://previews.123rf.com/images/luanateutzi/luanateutzi1406/luanateutzi140600058/29038690-close-up-on-color-coordinated-clothes-on-hangers-in-a-store-detail-on-all-colors-clothes-hanging-on.jpg"
                 class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img style="object-fit: cover" width="10px" height="450px"
-                src="https://th.bing.com/th/id/OIF.73ubnienEvktOWtGSc0wqg?w=276&h=207&c=7&r=0&o=5&pid=1.7"
+                src="https://images.unsplash.com/photo-1619161519929-befcb28d6384?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2xkJTIwY2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
                 class="d-block w-100" alt="...">
         </div>
     </div>

@@ -1,3 +1,13 @@
+<style>
+    .sidebar {
+        transform: translateX(-100%);
+        transition: all 0.8s
+    }
+
+    .show {
+        transform: translateX(0)
+    }
+</style>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: sticky; top:0; z-index:22">
     <div class="container-fluid">
         <a href=""><img width="70px"
@@ -60,6 +70,17 @@
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <i class="bi bi-cart fs-3 ms-5"></i>
+
+            <i class="menu bi bi-list fs-3 ms-2" style="cursor: pointer"></i>
         </div>
     </div>
 </nav>
+
+<script>
+    let menu = document.querySelector('.menu');
+    let sidebar = document.querySelector('.sidebar')
+    menu.addEventListener('click', () => {
+        sidebar.classList.toggle('show')
+    })
+</script>

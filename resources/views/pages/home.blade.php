@@ -11,11 +11,11 @@
 
 <body>
     <x-flash />
-    <x-nav />
-    <div class="" style="transform:translateX(0);width:300px;position:fixed;height:100vh; top:60px; z-index:11 ">
+    <div class="sidebar" style="width:300px;position:fixed;height:100vh; top:60px; z-index:11 ">
         <x-admin_sidebar />
 
     </div>
+    <x-nav />
     <div class="col-12">
         <x-slider />
         <h3 class="display-5 text-center">
