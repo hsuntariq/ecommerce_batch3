@@ -15,7 +15,8 @@ class Product_controller extends Controller
             'category'=>['required'],
             'image'=>'required',
         ]);
-        $formFields['image'] = $req->file('image')->store('images','public');
+        $formFields['image'] = $req->file('image')->store('images','public');;
+        
         Products::create($formFields);
         return back()->with('message','Product added Successfully');
     }

@@ -21,15 +21,15 @@
             </div>
             <div class="col-lg-6">
                 <form action="/add-to-cart" method="POST">
-
+                    @csrf
                     <h1> Name:{{ $item->name }}</h1>
-                    <input type="hidden" name="name" value="{{ $item->name }}" id="">
+                    <input type="hidden" name="product_name" value="{{ $item->name }}" id="">
                     <h4>Price:{{ $item->price }}</h4>
-                    <input type="hidden" name="price" value="{{ $item->price }}" id="">
-
-                    <button class="btn w-100 my-2" style="background-color: #FED44D">Add To Cart</button>
-                    <button class="btn w-100 my-2" style="background-color: hotpink">CheckOut</button>
+                    <input type="hidden" name="product_price" value="{{ $item->price }}" id="">
+                    <input type="hidden" name="product_image" value="{{ $item->image }}">
+                    <button type="submit" class="btn w-100 my-2" style="background-color: #FED44D">Add To Cart</button>
                 </form>
+                <button class="btn w-100 my-2" style="background-color: hotpink">CheckOut</button>
             </div>
         </div>
     </div>

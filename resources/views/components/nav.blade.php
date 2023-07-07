@@ -37,31 +37,30 @@
                             </span>
                         </a>
                     </li>
+                    <form class="d-flex justify-content-center" action="/logout" method="POST">
+                        @csrf
+                        <button style="background: transparent;border:none" class="d-flex justify-content-center"
+                            type="submit">
+                            <i class="fs-4 text-danger m-auto bi bi-power"></i>
+                        </button>
+                    </form>
+                @endauth
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    </a>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="{{ asset('storage/' . auth()->user()->image) }}" alt="profile">
-                        </a>
+                    <ul class="dropdown-menu">
 
-                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                                Update Details
+                            </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
 
-                            <li><a class="dropdown-item" href="#">
-                                    Update Details
-                                </a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
 
-                            <form class="d-flex justify-content-center" action="/logout" method="POST">
-                                @csrf
-                                <button style="background: transparent;border:none" class="d-flex justify-content-center"
-                                    type="submit">
-                                    <i class="fs-4 text-danger m-auto bi bi-power"></i>
-                                </button>
-                            </form>
-                        </ul>
-                    @endauth
+                    </ul>
 
                 </li>
 
@@ -70,7 +69,7 @@
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <i class="bi bi-cart fs-3 ms-5"></i>
+            <a href="/view-cart" class="text-dark"> <i class="bi bi-cart fs-3 ms-5"></i></a>
 
             <i class="menu bi bi-list fs-3 ms-2" style="cursor: pointer"></i>
         </div>

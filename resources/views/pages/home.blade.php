@@ -25,8 +25,8 @@
             <div class="row">
                 @foreach ($products as $item)
                     <div class="col-4 shadow border">
-                        <img width="100%" height="200px" style="object-fit: contain"
-                            src="{{ asset('storage/' . $item->image) }}" alt="">
+                        <img width="100%" height="200px" style="object-fit: contain" <img
+                            src="{{ asset('storage/' . $item->image) }}" alt="Uploaded Image">
                         <div class="row">
                             <div class="col-6">
                                 <h4 style="color: hotpink">

@@ -35,7 +35,7 @@
                             {{ $message }}
                         </p>
                     @enderror
-                    <input class="form-control my-3" type="submit" value="Register" style="background: hotpink">
+                    <input class="form-control my-3" type="submit" value="Login" style="background: hotpink">
                 </form>
             </div>
             <div class="col-lg-6 d-flex justify-content-center">

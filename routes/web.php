@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\cartController;
 use App\Http\Controllers\categoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Product_controller;
@@ -35,3 +36,6 @@ Route::get('/single-product/{id}',function($id){
 Route::post('/register',[userController::class,'SignUp']);
 Route::post('/logout',[userController::class,'SignOut']);
 Route::post('/login',[userController::class,'SignIn']);
+Route::view('/view-cart','pages.cart')->middleware('auth');
+Route::post('/add-to-cart',[cartController::class,'addToCart']);
+Route::get('/view-cart',[cartController::class,'getCartItems']);
